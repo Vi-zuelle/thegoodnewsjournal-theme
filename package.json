@@ -1,0 +1,22 @@
+{
+  "name": "thegoodnewsjournal-theme",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vi-zuelle/thegoodnewsjournal-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vi-zuelle/thegoodnewsjournal-theme/issues"
+  },
+  "homepage": "https://github.com/Vi-zuelle/thegoodnewsjournal-theme#readme",
+  "description": ""
+}
