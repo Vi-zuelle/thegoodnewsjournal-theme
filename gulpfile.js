@@ -44,7 +44,7 @@ var team                    = ''; // Team's Email ID.
 
 // Style related.
 var styleSRC                = './assets/scss/style.scss'; // Path to main .scss file.
-var styleDestination        = './'; // Path to place the compiled CSS file.
+var styleDestination        = './assets/css'; // Path to place the compiled CSS file.
 // Default set to root folder.
 
 // JS Vendor related.

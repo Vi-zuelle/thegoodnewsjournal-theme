@@ -31,7 +31,8 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item" href="<?php echo get_bloginfo( 'wpurl' );?>">LOGO</a>
+          <!-- <a href="<-?php echo get_bloginfo( 'wpurl' );?>"><div class=logo style="background-image: url('<?= get_template_directory_uri().'/assets/img/raw/logo-tgnj.svg'?>');"></div></a> -->
+          <a class="logo" href="<?php echo get_bloginfo( 'wpurl' );?>"><img src="<?= get_template_directory_uri().'/assets/img/raw/logo-tgnj.svg'?>" alt=""></a>
           <?php wp_list_pages('&title_li='); ?>
         </nav>
       </div>
