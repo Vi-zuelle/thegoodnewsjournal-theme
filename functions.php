@@ -9,6 +9,7 @@ function scripts() {
 
   // wp_enqueue_script( 'bootstrap', get_template_directory_uri().'assets/js/bootstrap.min.js', '', '', true );
   wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), '', true );
+  wp_enqueue_script( 'install', get_template_directory_uri().'/intall.php');
 }
 add_action( 'wp_enqueue_scripts', 'scripts' );
 // =============== .Scripts and stylesheets
@@ -115,12 +116,25 @@ if(!function_exists('_tk_setup')):
     load_theme_textdomain( '_tk', get_template_directory_uri() . '/languages' );
 
     register_nav_menus(array(
-      'header'  => __('En-tête')
+      'header'  => __('header')
     ));
   }
 endif;
 add_action('after_setup_theme', '_tk_setup');
 // =============== .Make sure basic setup stay
+
+
+// =============== Escapes HTML for output - TO DO
+// With this function, we can wrap any variable in the escape() function, and the HTML entities will be protected
+function escape($html) {
+  return htmlspecialchars($html, ENT_QUOTES | ENT_SUBSTITUTE, "UTF-8", true);
+}
+// =============== .Escapes HTML for output
+
+
+// =============== Register custom menu
+
+// =============== .Register custom menu
 
 
 // =============== Next function

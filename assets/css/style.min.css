@@ -24,8 +24,12 @@ ul{list-style:none}
 .blog-post-meta{margin-bottom:20px;color:#999}
 .blog-footer{padding:40px 0;color:#999;text-align:center;background-color:#f9f9f9;border-top:1px solid #e5e5e5}
 .blog-footer p:last-child{margin-bottom:0}
+.container-fluid{position:relative;margin:0;padding:0}
+.container-fluid .container{position:relative;margin:0 auto;padding:90px 0;width:100%;max-width:1180px}
+.container-fluid .row{position:relative;margin:0;padding:0}
 .error{padding:5px 9px;border:1px solid red;color:red;border-radius:3px}
 .success{padding:5px 9px;border:1px solid green;color:green;border-radius:3px}
 form span{color:red}
+label{display:block;margin:5px 0}
 @media(min-width:1200px){.container{width:970px}
 }

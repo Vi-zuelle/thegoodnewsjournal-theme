@@ -201,3 +201,21 @@ ul {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+.container-fluid {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	.container {
+		position: relative;
+		margin: 0 auto;
+		padding: 90px 0;
+		width: 100%;
+		max-width: 1180px;
+	}
+	.row {
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+}
