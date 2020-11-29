@@ -1,7 +1,7 @@
 <?php /* Template Name: template-read */ ?>
 
 <?php
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit2'])) {
   try {
     require "config.php";
     // require "../common.php";
@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
 
 
 <div class="container">
-  <h2>Find user based on city</h2>
+  <h2>Find sent message based on city</h2>
 
   <form method="post" class="wrapper form-group">
     <div class="form-row">
@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
       </div>
 
       <div class="col-4 mb-3">
-        <input type="submit" name="submit" value="View Results" class="btn btn-outline-dark">
+        <input type="submit" name="submit2" value="View Results" class="btn btn-outline-dark">
       </div>
     </div>
 
@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
 
   <div class="wrapper">
     <?php
-      if (isset($_POST['submit'])) {
+      if (isset($_POST['submit2'])) {
             if ($result && $statement->rowCount() > 0) { ?>
               <!-- open table -->
               <h2>Results</h2>

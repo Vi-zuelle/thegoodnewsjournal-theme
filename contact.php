@@ -54,10 +54,9 @@
   SEND INFO IN DB
  -->
  <div class="container">
- <div class="wrapper">
-   <h2>sharing is caring</h2>
-
- </div>
+  <div class="wrapper">
+    <h2>sharing is caring</h2>
+  </div>
   <form method="post" class="form-group">
     <div class="form-row">
       <div class="col mb-4">
@@ -108,7 +107,9 @@
       </div>
     </div>
   </form>
-
+  <div class="wrapper">
+    <?php  get_template_part( 'read', get_post_format() ); ?>
+  </div>
  </div>
 
 
