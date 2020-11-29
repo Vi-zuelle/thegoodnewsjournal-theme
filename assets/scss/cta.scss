@@ -1,0 +1,31 @@
+.mission-cta {
+  width: 100%;
+  height: 0;
+  padding-top: 68%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  // margin-top: 4%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .wrapper-cta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 8%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    h2, h3, h4 {
+      color: $white;
+    }
+  }
+}

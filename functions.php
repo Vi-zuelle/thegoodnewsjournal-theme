@@ -2,14 +2,13 @@
 
 // =============== Scripts and stylesheets
 function scripts() {
-  // wp_enqueue_style( 'boostrap', get_template_directory_uri().'/assets/css/bootstrap.min.css' );
-  wp_enqueue_style( 'boostrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' );
-  wp_enqueue_style( 'style', get_template_directory_uri().'/assets/css/style.min.css' );
   wp_enqueue_style( 'Raleway', 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' );
+  wp_enqueue_style( 'style', get_template_directory_uri().'/assets/css/style.min.css' );
+  wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+  wp_enqueue_style( 'boostrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' );
 
-  // wp_enqueue_script( 'bootstrap', get_template_directory_uri().'assets/js/bootstrap.min.js', '', '', true );
+  wp_enqueue_script( 'customjs', get_template_directory_uri() . '/assets/js/custom.min.js', array('jquery'), '', true );
   wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), '', true );
-  wp_enqueue_script( 'install', get_template_directory_uri().'/intall.php');
 }
 add_action( 'wp_enqueue_scripts', 'scripts' );
 // =============== .Scripts and stylesheets
@@ -132,9 +131,22 @@ function escape($html) {
 // =============== .Escapes HTML for output
 
 
-// =============== Register custom menu
+// =============== jQuery Migrate
+// function wpb_jquery_migrate($scripts) {
+//   $scripts->remove('jquery');
+//   $scripts->add('jquery', false, array( 'jquery-core' ), '1.12.4');
+//   $scripts->remove('wp-embed');
+// }
+// add_filter('wp_default_scripts', 'wpb_jquery_migrate');
+// =============== .jQuery Migrate
 
-// =============== .Register custom menu
+
+// =============== Change the excerpt length
+function my_excerpt_length($length){
+  return 40;
+}
+add_filter('excerpt_length', 'my_excerpt_length');
+// =============== .Change the excerpt length
 
 
 // =============== Next function

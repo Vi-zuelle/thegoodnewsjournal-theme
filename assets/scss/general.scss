@@ -1,6 +1,9 @@
 // ================= Globals
 $white: #FFFFFF;
 $black: #333332;
+$lightblue:aliceblue;
+$lightgrey: #999;
+$light: 200;
 $regular: 400;
 $semibold: 600;
 $bold: 700;
@@ -12,7 +15,7 @@ $paddingwrapper: 14%;
 body {
   font-family: Raleway, Arial, sans-serif;
   color: $black;
-  // background-color: red;
+  text-align: center !important;
 }
 
 h1, .h1,
@@ -22,40 +25,74 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  margin-bottom: 0;
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: $light;
   color: $black;
+}
+
+h1, .h1 {
+  font-size: 72px;
+  padding: 6%;
+}
+
+h2, .h2 {
+  padding: 2%;
+}
+
+h3, .h3 {
+  font-weight: $semibold;
+  padding: 2%;
+}
+
+h4, .h4 {
+  font-size: 24px;
+  font-weight: $regular;
+  padding: 0;
+  margin: 0;
+  &::before {
+    content: '- ';
+  }
+  &::after {
+    content: ' -';
+  }
 }
 
 ul {
   list-style: none;
 }
+
+button {
+  outline: inherit !important;
+  cursor: pointer;
+  margin: 4% !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  padding-top: 112px;
+  padding-bottom: 260px;
+}
+
+.wrapper {
+  margin: 4% 0;
+}
+
+
 // ================= .Globals
 
-.img-full {
-  height: 100px;
-  width: 100px;
-  border: 2px solid red;
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
-  fill: white;
-  color: white;
-
-}
 
 
-/*
- * Override Bootstrap's default container.
- */
 
- @media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-}
 
 
 /*

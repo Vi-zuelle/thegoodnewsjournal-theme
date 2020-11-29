@@ -53,29 +53,63 @@
 <!--
   SEND INFO IN DB
  -->
-<form method="post">
-    	<label for="firstname">First Name</label>
-      <input type="text" name="firstname" id="firstname">
+ <div class="container">
+ <div class="wrapper">
+   <h2>sharing is caring</h2>
 
-    	<label for="lastname">Last Name</label>
-      <input type="text" name="lastname" id="lastname">
+ </div>
+  <form method="post" class="form-group">
+    <div class="form-row">
+      <div class="col mb-4">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name">
+      </div>
+      <div class="col mb-4">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name">
+      </div>
+    </div>
 
-    	<label for="email">Email Address</label>
-      <input type="text" name="email" id="email">
+    <div class="form-row">
+      <div class="col mb-4">
+        <label for="email">Email Address</label>
+        <input type="text" name="email" id="email" class="form-control" placeholder="Email Address">
+      </div>
+    </div>
 
-    	<label for="country">Country</label>
-      <input type="text" name="country" id="country">
+    <div class="form-row">
+      <div class="col mb-4">
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" class="form-control" placeholder="Country">
+      </div>
+      <div class="col mb-4">
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" class="form-control" placeholder="City">
+      </div>
+    </div>
 
-    	<label for="city">City</label>
-      <input type="text" name="city" id="city">
+    <div class="form-row">
+      <div class="col mb-4">
+        <label for="message">Message</label>
+        <textarea type="text" name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+      </div>
+    </div>
 
-    	<label for="message">Message</label>
-      <textarea type="text" name="message"></textarea>
+    <!-- <div class="form-row">
+      <div class="col mb-4 form-center">
+        <input class="form-check-input" type="checkbox" value="" id="checkbox">
+        <label class="form-check-label" for="checkbox">Subscribe to our newsletter</label>
+      </div>
+    </div> -->
 
+    <div class="form-row">
+      <div class="col mb-4 form-center">
+        <input type="submit" name="submit" value="Send" class="btn btn-outline-dark">
+      </div>
+    </div>
+  </form>
 
-    	<input type="submit" name="submit" value="Submit">
-    </form>
-
+ </div>
 
 
 

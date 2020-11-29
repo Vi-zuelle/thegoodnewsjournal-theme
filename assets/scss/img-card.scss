@@ -1,0 +1,24 @@
+.img-card {
+  width: 100%;
+  height: 0;
+  padding-top: 68%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .text-card{
+    background: rgba(0,0,0,0.7);
+
+    position: absolute;
+    top: 5vw;
+    bottom: 5vw;
+    left: 5vw;
+    right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    .text {
+      padding: 8%;
+    }
+  }
+}

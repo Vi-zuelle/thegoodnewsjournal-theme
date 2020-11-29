@@ -1,0 +1,21 @@
+.post-meta {
+  margin-bottom: 20px;
+  color: $lightgrey;
+}
+.post-text {
+  margin: 4% 0;
+}
+.post-small-img {
+  img {
+    object-fit: contain;
+  }
+}
+.post-img {
+  width: 100%;
+  // height: auto;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
