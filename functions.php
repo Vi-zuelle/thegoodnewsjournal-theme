@@ -131,16 +131,6 @@ function escape($html) {
 // =============== .Escapes HTML for output
 
 
-// =============== jQuery Migrate
-// function wpb_jquery_migrate($scripts) {
-//   $scripts->remove('jquery');
-//   $scripts->add('jquery', false, array( 'jquery-core' ), '1.12.4');
-//   $scripts->remove('wp-embed');
-// }
-// add_filter('wp_default_scripts', 'wpb_jquery_migrate');
-// =============== .jQuery Migrate
-
-
 // =============== Change the excerpt length
 function my_excerpt_length($length){
   return 40;

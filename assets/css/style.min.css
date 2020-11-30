@@ -58,9 +58,12 @@ img{width:100%}
 .img-card .text-card .text{padding:8%}
 .post-meta{margin-bottom:20px;color:#999}
 .post-text{margin:4% 0}
-.post-small-img img{-o-object-fit:contain;object-fit:contain}
+.post-small-img img{width:100%;height:auto}
 .post-img{width:100%;overflow:hidden}
 .post-img img{width:100%;height:auto}
+.post p{font-size:.9rem}
+.post .title{padding-top:4%}
 @media(min-width:768px){.navbar{background:-webkit-gradient(linear,left bottom,left top,from(rgba(255,255,255,0)),color-stop(32%,white));background:-webkit-linear-gradient(bottom,rgba(255,255,255,0) 0,white 32%);background:linear-gradient(0,rgba(255,255,255,0) 0,white 32%)}
 .navbar .navbar-collapse ul li{padding:14%}
+.post .title{padding-top:0}
 }

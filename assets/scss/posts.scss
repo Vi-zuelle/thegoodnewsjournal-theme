@@ -7,7 +7,9 @@
 }
 .post-small-img {
   img {
-    object-fit: contain;
+    width: 100%;
+    height: auto;
+    // object-fit: contain;
   }
 }
 .post-img {
@@ -17,5 +19,17 @@
   img {
     width: 100%;
     height: auto;
+  }
+}
+
+.post {
+  p {
+    font-size: 0.9rem;
+  }
+  .title {
+    padding-top: 4%;
+    @media (min-width: 768px) {
+      padding-top: 0;
+    }
   }
 }

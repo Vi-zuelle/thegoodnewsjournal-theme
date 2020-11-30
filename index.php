@@ -6,7 +6,7 @@
       <h1>The Good News daily</h1>
     </div>
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-md-12 col-sm-12">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <div class="news-post shadow-lg p-3 mb-5 bg-white rounded">
@@ -22,7 +22,7 @@
         </nav>
         <?php endif;?>
       </div> <!-- /.col -->
-      <?php get_sidebar(); ?>
+      <!-- <-?php get_sidebar(); ?> -->
     </div> <!-- /.row -->
 
   </div>

@@ -1,4 +1,6 @@
-<?php /* Template Name: template-read */ ?>
+<!--
+  RETRIEVE DATA FROM DB
+ -->
 
 <?php
 if (isset($_POST['submit2'])) {
@@ -36,13 +38,13 @@ if (isset($_POST['submit2'])) {
 
   <form method="post" class="wrapper form-group">
     <div class="form-row">
-      <div class="col-8 mb-3">
+      <div class="col-10 mb-3">
         <!-- <label for="city">City</label> -->
         <input type="text" id="city" name="city" class="form-control" placeholder="Seach by city">
       </div>
 
-      <div class="col-4 mb-3">
-        <input type="submit" name="submit2" value="View Results" class="btn btn-outline-dark">
+      <div class="col-2 mb-3">
+        <input type="submit" name="submit2" value="View Results" class="btn btn-outline-dark w-100">
       </div>
     </div>
 
